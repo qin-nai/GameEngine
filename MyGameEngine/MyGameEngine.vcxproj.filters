@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="mian.cpp" />
+    <ClCompile Include="GameEngine\Director.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\AppIication.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="AppDelegate.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="GameEngine">
+      <UniqueIdentifier>{9ade11f2-b116-4f4a-8cf9-82a5422b3c3d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameEngine\Director.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine_H.h" />
+    <ClInclude Include="GameEngine\AppIication.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="AppDelegate.h" />
+  </ItemGroup>
+</Project>
