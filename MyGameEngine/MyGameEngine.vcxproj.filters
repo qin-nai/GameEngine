@@ -19,6 +19,9 @@
       <Filter>GameEngine</Filter>
     </ClCompile>
     <ClCompile Include="AppDelegate.cpp" />
+    <ClCompile Include="GameEngine\Sprite.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="GameEngine">
@@ -42,6 +45,9 @@
     <ClInclude Include="UserGuideScene.h" />
     <ClInclude Include="AppDelegate.h" />
     <ClInclude Include="GameEngine\Label.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\Sprite.h">
       <Filter>GameEngine</Filter>
     </ClInclude>
   </ItemGroup>

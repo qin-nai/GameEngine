@@ -25,6 +25,7 @@
     <ClCompile Include="GameEngine\Label.cpp" />
     <ClCompile Include="GameEngine\Node.cpp" />
     <ClCompile Include="GameEngine\Scene.cpp" />
+    <ClCompile Include="GameEngine\Sprite.cpp" />
     <ClCompile Include="mian.cpp" />
     <ClCompile Include="UserGuideScene.cpp" />
   </ItemGroup>
@@ -35,6 +36,7 @@
     <ClInclude Include="GameEngine\Label.h" />
     <ClInclude Include="GameEngine\Node.h" />
     <ClInclude Include="GameEngine\Scene.h" />
+    <ClInclude Include="GameEngine\Sprite.h" />
     <ClInclude Include="GameEngine_H.h" />
     <ClInclude Include="UserGuideScene.h" />
   </ItemGroup>

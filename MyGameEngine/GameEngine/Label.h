@@ -8,9 +8,11 @@ namespace dhgame
 
 	public:
 		
+		CREATE_FUNC(Label);
+
 		void setString(string str);
 		string getString();
-		virtual void draw(char* frame, int width, int height) override;
+		virtual void draw(char* frame, int width, int height, Vec2 p) override;
 	private:
 		 
 		string _str;

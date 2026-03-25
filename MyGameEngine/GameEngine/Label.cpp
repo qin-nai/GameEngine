@@ -13,13 +13,13 @@ string Label::getString() {
 	
 	return this->_str;
 }
-
-void Label::draw(char* frame, int width, int height) {
+//节点本身的世界坐标 = 父节点的世界坐标 + 节点的局部坐标
+void Label::draw(char* frame, int width, int height, Vec2 p) {
 	int x = 0;
 	int y = 0;
 	for(int i=0;i<this->_str.size();i++){
-		y = this->_y;
-		x = this->_x + i;
+		y = p.y;
+		x = p.x + i;
 		if (x < 0 || y < 0 || x >= width || y >= height) continue;
 		frame[y * width + x] = this->_str[i];
 	}

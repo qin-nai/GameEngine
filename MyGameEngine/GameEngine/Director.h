@@ -18,7 +18,7 @@ namespace dhgame {
 	private:
 		Director();
 		void draw();
-		void drawNodes(Node* root);
+		void drawNodes(Node* root , Vec2 p);
 	protected:
 		//设计分辨率
 		Size _designResolutionSize;

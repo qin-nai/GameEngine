@@ -6,7 +6,7 @@ using namespace std;
 using namespace dhgame;
 
 static Director* instance = nullptr;
-
+//单例模式，获取Director实例=====控制分辨率
 Director::Director() {
 	this->setDesignResolutionSize(10, 10);
 }
@@ -36,12 +36,15 @@ void Director::setDesignResolutionSize(int width, int height)
 	this->_frame = new char[width * height];
 }
 
-void Director::drawNodes(Node* root)
+void Director::drawNodes(Node* root ,Vec2 p)
 {
-	root->draw(this->_frame, this->_designResolutionSize.width, this->_designResolutionSize.height);
+	p.x += root->getpositionX();
+	p.y += root->getpositionY();
+	//绘制当前节点的世界坐标
+	root->draw(this->_frame, this->_designResolutionSize.width, this->_designResolutionSize.height, p);
 	auto childs = root->getChildren();
 	for(int i=0;i<childs.size();i++){
-		this->drawNodes(childs[i]);
+		this->drawNodes(childs[i], p);
 	}
 }
 
@@ -52,7 +55,8 @@ void Director::draw()
 	int height = this->_designResolutionSize.height;
 	memset(this->_frame, ' ', width * height);
 	if (this->_runningScene) {
-		this->drawNodes(this->_runningScene);
+		Vec2 p;
+		this->drawNodes(this->_runningScene, p);
 	}
 	system("cls");
 	for(int i=0;i<height;i++){
