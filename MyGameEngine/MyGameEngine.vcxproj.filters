@@ -8,6 +8,16 @@
     <ClCompile Include="GameEngine\AppIication.cpp">
       <Filter>GameEngine</Filter>
     </ClCompile>
+    <ClCompile Include="GameEngine\Node.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine\Scene.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="UserGuideScene.cpp" />
+    <ClCompile Include="GameEngine\Label.cpp">
+      <Filter>GameEngine</Filter>
+    </ClCompile>
     <ClCompile Include="AppDelegate.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -23,6 +33,16 @@
     <ClInclude Include="GameEngine\AppIication.h">
       <Filter>GameEngine</Filter>
     </ClInclude>
+    <ClInclude Include="GameEngine\Node.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine\Scene.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="UserGuideScene.h" />
     <ClInclude Include="AppDelegate.h" />
+    <ClInclude Include="GameEngine\Label.h">
+      <Filter>GameEngine</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

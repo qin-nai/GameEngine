@@ -2,10 +2,13 @@
 #include "GameEngine_H.h"
 using namespace dhgame;
 using namespace std;
+
+
+
 int main() {
 	
-	AppIication app;
-	app.run();
-
+	AppDelegate app;
+	AppIication::getIncation()->run();
+	
 	return 0;
 }

@@ -22,13 +22,21 @@
     <ClCompile Include="AppDelegate.cpp" />
     <ClCompile Include="GameEngine\AppIication.cpp" />
     <ClCompile Include="GameEngine\Director.cpp" />
+    <ClCompile Include="GameEngine\Label.cpp" />
+    <ClCompile Include="GameEngine\Node.cpp" />
+    <ClCompile Include="GameEngine\Scene.cpp" />
     <ClCompile Include="mian.cpp" />
+    <ClCompile Include="UserGuideScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AppDelegate.h" />
     <ClInclude Include="GameEngine\AppIication.h" />
     <ClInclude Include="GameEngine\Director.h" />
+    <ClInclude Include="GameEngine\Label.h" />
+    <ClInclude Include="GameEngine\Node.h" />
+    <ClInclude Include="GameEngine\Scene.h" />
     <ClInclude Include="GameEngine_H.h" />
+    <ClInclude Include="UserGuideScene.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
